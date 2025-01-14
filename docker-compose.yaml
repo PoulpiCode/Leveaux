@@ -1,0 +1,48 @@
+services:
+  # gerico-frontend:
+  #   build:
+  #     context: .
+  #   container_name: gerico-frontend
+  #   volumes:
+  #     - ./gerico:/usr/src/app/
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     - NEXT_PUBLIC_API_URL=http://localhost:3000
+  #   depends_on:
+  #     - gerico-db
+  #   networks:
+  #     - gerico-network
+
+  gerico-db:
+    image: postgres:17-alpine
+    container_name: gerico-db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    volumes:
+      - gerico-data:/var/lib/postgresql/data
+    networks:
+      - gerico-network
+
+  # gerico-nginx:
+  #   image: nginx:alpine
+  #   container_name: gerico-nginx
+  #   volumes:
+  #     - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+  #   ports:
+  #     - "80:80"
+  #   depends_on:
+  #     - gerico-frontend
+  #   networks:
+  #     - gerico-network
+
+volumes:
+  gerico-data:
+
+
+networks:
+  gerico-network:

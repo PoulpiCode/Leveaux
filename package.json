@@ -1,0 +1,22 @@
+{
+	"name": "gerico-workspace",
+	"version": "0.0.1",
+	"workspaces": [
+		"database",
+		"gerico"
+	],
+	"private": true,
+	"description": "## Lancer le projet pour développer",
+	"scripts": {
+		"tsc": "npm run tsc --workspaces",
+		"build": "npm run build --workspaces",
+		"dev": "npm run dev --workspaces"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@radix-ui/react-accordion": "^1.2.1",
+		"@types/jsonwebtoken": "^9.0.7",
+		"shadcn-ui": "^0.9.3"
+	}
+}

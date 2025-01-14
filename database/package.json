@@ -1,0 +1,27 @@
+{
+	"name": "@gerico/database",
+	"version": "0.0.1",
+	"main": "dist/main.js",
+	"types": "dist/main.d.ts",
+	"files": "/dist",
+	"type": "module",
+	"scripts": {
+		"tsc": "tsc",
+		"build": "tsc",
+		"dev": "tsc"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@types/pg": "^8.11.10",
+		"typescript": "^5.6.2"
+	},
+	"dependencies": {
+		"@types/bcryptjs": "^2.4.6",
+		"bcryptjs": "^2.4.3",
+		"dotenv": "^16.4.5",
+		"jsonwebtoken": "^9.0.2",
+		"pg": "^8.13.0"
+	}
+}
