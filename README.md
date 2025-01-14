@@ -1,29 +1,4 @@
-# gerico
-
-## Créer un ficher `.env`
-
-> Ce fichier doit se trouver dans la source du projet.
-
-Ce fichier est important, il permet de configuer les variables d'environnements,
-il doit se composer ainsi:
-
-```dotenv
-POSTGRES_USER=postgres # Ne pas changer le nom d'utilisateur
-POSTGRES_PASSWORD=1234 # Mettez ce que vous voulez
-POSTGRES_DB=gericodb # Idem pour le nom de la DB
-POSTGRES_HOST=localhost # Idem pour ça
-POSTGRESS_PORT=5432 # Et idem pour ça
-```
-
-## Lancer le projet pour développer
-
-> Prérequis: Avoir docker d'installé
-
-### Lancer les conteneurs docker
-```bash
-docker-compose up --build
-```
-Le flag `-d` peut être utile si vous voulez l'avoir en arrière plan.
+# Leveaux
 
 ### Voir les modifications
 Vous pouvez voir les modifications que vous apportez en temps réel en allant sur
@@ -40,7 +15,5 @@ mais il faudra raffraichir la page pour voir les changements.
 
 ## Contribution
 
-Chacun d'entre nous a une branche dédiée: `dev/votre_prénom`.
-Veillez à bien push depuis votre branche.
-Si vous voulez *merge* vos changements dans la branche `master`, merci de faire un
-*Pull request* depuis GitHub.
+Une seule est unique Contribution que je m'efforcerai de Push a chaque fin de journée afin d'avoir un suivi/sauvegardes ainsi que 
+un historique au cas ou.

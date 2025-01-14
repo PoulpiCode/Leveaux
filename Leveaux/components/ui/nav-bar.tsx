@@ -98,7 +98,7 @@ const Navbar1 = () => {
 				<div className="block lg:hidden">
 					<div className="flex items-center justify-between">
 						<div className="flex items-center gap-2 ml-4">
-							<img src="/file.png" className="w-10" alt="logo" />
+							<img src="/file.jpg" className="w-10" alt="logo" />
 							<span className="text-xl font-bold">Broderie Leveaux</span>
 						</div>
 						<Sheet>
@@ -111,8 +111,8 @@ const Navbar1 = () => {
 								<SheetHeader>
 									<SheetTitle>
 										<div className="flex items-center gap-2">
-											<img src="/logo.png" className="w-8" alt="logo" />
-											<span className="text-xl font-bold">Gerico</span>
+											<img src="/file.jpg" className="w-8" alt="logo" />
+											<span className="text-xl font-bold">Broderie Leveaux</span>
 										</div>
 									</SheetTitle>
 								</SheetHeader>
