@@ -15,6 +15,12 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+/* styles/globals.css */
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Parisienne&display=swap");
+.font-italiano {
+	font-family: "Italiano", cursive;
+}
+
 h1 {
 	font-size: 3rem;
 }
@@ -116,6 +122,5 @@ a {
 		body {
 			@apply bg-background text-foreground;
 		}
-
 	}
 }

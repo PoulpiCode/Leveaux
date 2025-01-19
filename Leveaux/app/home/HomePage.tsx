@@ -1,39 +1,69 @@
 import { ArrowDownRight } from "lucide-react";
-
+import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
 
 const Hero1 = () => {
-  return (
-    <section className="py-32">
-      <div className="container">
-        <div className="grid items-center gap-8 lg:grid-cols-2">
-          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <h1 className="my-6 text-pretty text-4xl font-bold lg:text-6xl">
-              Welcome to Our Website
-            </h1>
-            <p className="mb-8 max-w-xl text-muted-foreground lg:text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig
-              doloremque mollitia fugiat omnis! Porro facilis quo animi
-              consequatur. Explicabo.
-            </p>
-            <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
-              <Button className="w-full sm:w-auto">Primary Button</Button>
-              <Button variant="outline" className="w-full sm:w-auto">
-                Secondary Button
-                <ArrowDownRight className="ml-2 size-4" />
-              </Button>
-            </div>
-          </div>
-          <img
-            src="https://shadcnblocks.com/images/block/placeholder-1.svg"
-            alt="placeholder hero"
-            className="max-h-96 w-full rounded-md object-cover"
-          />
-        </div>
-      </div>
-    </section>
-  );
+	return (
+		<section className="w-full h-full">
+			<div
+				className="relative w-full flex flex-col h-screen bg-cover bg-center items-center justify-center shadow-lg"
+				style={{
+					backgroundImage:
+						"url('1713224347_broderie-moderne-techniques-pour-personnaliser-vos-pieces.jpg')",
+				}}
+			>
+				<div className=" z-10 flex w-full flex-col items-center">
+					<h2 className="w-3/5 text-white text-wrap text-center text-8xl flex-col underline decoration-solid font-italiano">
+						Broderie Leveaux
+					</h2>
+					<h2 className="w-3/5 text-wrap text-center font-bold text-6xl flex-col text-white">
+						<br /> Votre spécialiste tricolore de la broderie, où savoir-faire
+						artisanal et créativité moderne
+					</h2>
+					<div className="flex gap-7 pt-4">
+						<Button className="text-lg" size="home_size">
+							<Link href="/contact" className="text-base">
+								Contactez-nous !
+							</Link>
+						</Button>
+						<Button variant="outline" size="home_size">
+							<Link href="/about" className="text-base">
+								A Propos
+							</Link>
+						</Button>
+					</div>
+				</div>
+			</div>
+			<div className="py-4">
+				<h2 className="flex justify-center text-cyan-900 decoration-solid font-italiano">
+					De fil en aiguille
+				</h2>
+				<Separator className="my-4 bg-cyan-800" />
+			</div>
+			<div className="video-container flex justify-center">
+				<iframe
+					width="598"
+					height="336"
+					src="https://www.youtube.com/embed/0-Qn_07TpQo"
+					title="Broderies Leveaux"
+					frameBorder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerPolicy="strict-origin-when-cross-origin"
+					allowFullScreen
+				></iframe>
+			</div>
+		</section>
+	);
 };
 
 export default Hero1;

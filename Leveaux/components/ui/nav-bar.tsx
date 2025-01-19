@@ -33,17 +33,20 @@ const Navbar1 = () => {
 					<div className="flex items-center gap-8">
 						<div className="flex items-center gap-2 ml-4">
 							<img src="/file.jpg" className="w-8" alt="logo" />
-							<span className="text-2xl font-bold">Broderie Leveaux</span>
+							<span className="text-2xl font-bold text-cyan-800">
+								Broderie Leveaux
+							</span>
 						</div>
 						<div className="flex items-center">
 							<a
 								className={cn(
-									"text-muted-foreground",
+									"text-black",
 									"text-3xl",
 									navigationMenuTriggerStyle,
 									buttonVariants({
 										variant: "ghost",
 									}),
+									"hover:text-cyan-700",
 								)}
 								href="/"
 							>
@@ -51,12 +54,13 @@ const Navbar1 = () => {
 							</a>
 							<a
 								className={cn(
-									"text-muted-foreground",
+									"text-black",
 									"text-3xl",
 									navigationMenuTriggerStyle,
 									buttonVariants({
 										variant: "ghost",
 									}),
+									"hover:text-cyan-700",
 								)}
 								href="/about"
 							>
@@ -64,11 +68,12 @@ const Navbar1 = () => {
 							</a>
 							<a
 								className={cn(
-									"text-muted-foreground",
+									"text-black",
 									navigationMenuTriggerStyle,
 									buttonVariants({
 										variant: "ghost",
 									}),
+									"hover:text-cyan-700",
 								)}
 								href="/test"
 							>
@@ -77,15 +82,29 @@ const Navbar1 = () => {
 
 							<a
 								className={cn(
-									"text-muted-foreground",
+									"text-black",
 									navigationMenuTriggerStyle,
 									buttonVariants({
 										variant: "ghost",
 									}),
+									"hover:text-cyan-700",
 								)}
 								href="/contact"
 							>
 								Contact
+							</a>
+							<a
+								className={cn(
+									"text-black",
+									navigationMenuTriggerStyle,
+									buttonVariants({
+										variant: "ghost",
+									}),
+									"hover:text-cyan-700",
+								)}
+								href="/contact"
+							>
+								Création
 							</a>
 						</div>
 					</div>
@@ -99,7 +118,9 @@ const Navbar1 = () => {
 					<div className="flex items-center justify-between">
 						<div className="flex items-center gap-2 ml-4">
 							<img src="/file.jpg" className="w-10" alt="logo" />
-							<span className="text-xl font-bold">Broderie Leveaux</span>
+							<span className="text-xl font-bold text-cyan-800">
+								Broderie Leveaux
+							</span>
 						</div>
 						<Sheet>
 							<SheetTrigger asChild>
@@ -112,7 +133,9 @@ const Navbar1 = () => {
 									<SheetTitle>
 										<div className="flex items-center gap-2">
 											<img src="/file.jpg" className="w-8" alt="logo" />
-											<span className="text-xl font-bold">Broderie Leveaux</span>
+											<span className="text-xl font-bold">
+												Broderie Leveaux
+											</span>
 										</div>
 									</SheetTitle>
 								</SheetHeader>

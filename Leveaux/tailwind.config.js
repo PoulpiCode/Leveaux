@@ -8,6 +8,9 @@ module.exports = {
 	],
 	theme: {
     	extend: {
+			fontFamily: {
+				parisienne: ['Parisienne', 'sans-serif'],
+			},
     		keyframes: {
     			'accordion-down': {
     				from: {

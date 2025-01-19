@@ -1,24 +1,22 @@
-import React from "react";
-
+import { ArrowDownRight } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card";
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
 
-const About: React.FC = () => {
+const Hero1 = () => {
 	return (
-		<Card className="container bg-card py-3 px-4 border-0 flex items-center justify-between gap-6 rounded-2xl mt-5">
-			<div className="mt-4 flex flex-col gap-10">
-				<section>
-					<h1>Test</h1>
-				</section>
-			</div>
-		</Card>
+		<p>aeazeea</p>
+		
 	);
 };
 
-export default About;
+export default Hero1;

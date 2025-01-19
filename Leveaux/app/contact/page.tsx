@@ -215,12 +215,11 @@ const Contact: React.FC = () => {
                             <CardTitle className="text-4xl">Retrouvez-nous</CardTitle>
                         </CardHeader>
                         <CardContent className="flex flex-row gap-4">
-                            <iframe
-                                width="425"
-                                height="350"
-                                src="https://www.openstreetmap.org/export/embed.html?bbox=2.261584847357368%2C49.869660341134114%2C2.266386001494025%2C49.87200794067971&amp;layer=mapnik&amp;marker=49.870834155170705%2C2.263985424425755"
-                                style={{ border: "1px solid black" }}
-                            ></iframe>
+                        <iframe
+                        width="425"
+                        height="350"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=2.261584847357368%2C49.869660341134114%2C2.266386001494025%2C49.87200794067971&amp;layer=mapnik&amp;marker=49.875%2C2.265"
+                        ></iframe>
                             <div className="flex flex-col justify-center gap-10">
                                 <div className="flex flex-col text-2xl">
                                     <h2>Adresse: </h2>
