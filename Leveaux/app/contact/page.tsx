@@ -177,7 +177,7 @@ const Contact: React.FC = () => {
                                 Notre équipe est prête a vous assisté tout de suite.
                             </p>
                             <a href='#' className='font-semibold hover:underline'>
-                                gerico@u-picardie.fr
+                                Leveaux@u-picardie.fr
                             </a>
                         </div>
                         <div>
@@ -215,7 +215,14 @@ const Contact: React.FC = () => {
                             <CardTitle className="text-4xl">Retrouvez-nous</CardTitle>
                         </CardHeader>
                         <CardContent className="flex flex-row gap-4">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28977.20301339372!2d3.3293907512416165!3d50.06293396943577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c298af4168052d%3A0x77a41d4be091860c!2sBroderies%20Leveaux!5e0!3m2!1sfr!2sfr!4v1738067622454!5m2!1sfr!2sfr" width="600" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28977.20301339372!2d3.3293907512416165!3d50.06293396943577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c298af4168052d%3A0x77a41d4be091860c!2sBroderies%20Leveaux!5e0!3m2!1sfr!2sfr!4v1738067622454!5m2!1sfr!2sfr" 
+                         width="600" 
+                         height="450" 
+                         style={{ border: 0 }} 
+                         allowFullScreen={true} 
+                         loading="lazy" 
+                         referrerPolicy="no-referrer-when-downgrade">
+                         </iframe>
                             <div className="flex flex-col justify-center gap-10">
                                 <div className="flex flex-col text-2xl">
                                     <h2>Adresse: </h2>

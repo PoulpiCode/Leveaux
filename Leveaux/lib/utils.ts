@@ -6,12 +6,12 @@ export function cn(...inputs: ClassValue[]) {
 	return twMerge(clsx(inputs));
 }
 
-export interface GericoResponseBody {
+export interface LeveauxResponseBody {
 	status: "Success" | "Error";
 	data: any;
 }
 
-export function gericoResponse(body: GericoResponseBody, init?: ResponseInit) {
+export function LeveauxResponse(body: LeveauxResponseBody, init?: ResponseInit) {
 	return NextResponse.json(body, init);
 }
 

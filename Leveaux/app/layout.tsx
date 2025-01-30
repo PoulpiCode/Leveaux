@@ -21,17 +21,14 @@ export const metadata: Metadata = {
 	description: "",
 };
 
-export default function RootLayout({
-	children,
-}: Readonly<{
-	children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} w-full items-center flex flex-col`}
-			>
-				<LayoutProvider>{children}</LayoutProvider>
+		<html lang="fr">
+			<body className={`${geistSans.variable} ${geistMono.variable} flex flex-col min-h-screen`}>
+				<LayoutProvider>
+					
+					<main className="flex-1 w-full max-w-full mx-auto px-0">{children}</main>  {/* ✅ flex-1 pour pousser le footer en bas */}
+				</LayoutProvider>
 			</body>
 		</html>
 	);

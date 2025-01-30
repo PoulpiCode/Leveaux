@@ -262,7 +262,7 @@ const Politics: React.FC = () => {
 						A Propos
 					</a>{" "}
 					<br />
-					Email: gerico@u-picardie.fr <br />
+					Email: test@u-picardie.fr <br />
 					Téléphone: 07 57 50 71 34 <br />
 					Adresse: Avenue des Facultés 80480 Salouël
 				</p>
