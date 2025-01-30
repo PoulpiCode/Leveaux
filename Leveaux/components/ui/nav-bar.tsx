@@ -102,16 +102,11 @@ const Navbar1 = () => {
 									}),
 									"hover:text-cyan-700",
 								)}
-								href="/contact"
+								href="/crea"
 							>
 								Création
 							</a>
 						</div>
-					</div>
-					<div className="flex gap-2 mr-8">
-						<a href="/login">
-							<Button>Log in</Button>
-						</a>
 					</div>
 				</nav>
 				<div className="block lg:hidden">

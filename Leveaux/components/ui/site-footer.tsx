@@ -1,149 +1,63 @@
-import {
-	DropdownMenu,
-	DropdownMenuContent,
-	DropdownMenuItem,
-	DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Menu } from "lucide-react";
-import { Card } from "@/components/ui/card";
-import ThemeToggle from "@/components/theme-toggle";
-import { Button } from "@/components/ui/button";
-import { nanoid } from "nanoid";
-import Link from "next/link";
-import Image from "next/image";
+import { Facebook, Instagram, Twitter } from "lucide-react";
 
-export function Footer() {
+const Footer = () => {
 	return (
-		<footer className="mt-8 border-t border-gray-300 py-8 dark:border-gray-700 m-4">
-			<div className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-4 ">
-				{/* Section 1: À propos */}
-				<div>
-					<h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-						À propos
-					</h3>
-					<p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-						Nous sommes une entreprise dédiée à offrir les meilleures solutions
-						technologiques pour vos besoins.
-					</p>
-					<a
-						href="/about"
-						className="mt-2 inline-block text-sm font-medium underline underline-offset-4 text-blue-500"
-					>
-						En savoir plus
-					</a>
-				</div>
-
-				{/* Section 2: Contact */}
-				<div>
-					<h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-						Contact
-					</h3>
-					<ul className="mt-2 space-y-2">
-						<li className="text-sm text-gray-600 dark:text-gray-400">
-							Email: gerico@u-picardie.fr
-						</li>
-						<li className="text-sm text-gray-600 dark:text-gray-400">
-							Téléphone: 07 57 50 71 34
-						</li>
-						<li className="text-sm text-gray-600 dark:text-gray-400">
-							Adresse: Avenue des Facultés 80480 Salouël
-						</li>
-					</ul>
-				</div>
-
-				{/* Section 3: Liens rapides */}
-				<div>
-					<h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-						Liens rapides
-					</h3>
-					<ul className="mt-2 space-y-2">
-						<li>
-							<a
-								href="/"
-								className="text-sm text-gray-600 dark:text-gray-400 hover:underline"
-							>
-								Accueil
-							</a>
-						</li>
-						<li>
-							<a
-								href="/contact"
-								className="text-sm text-gray-600 dark:text-gray-400 hover:underline"
-							>
-								Contact
-							</a>
-						</li>
-						<li>
-							<a
-								href="/quote"
-								className="text-sm text-gray-600 dark:text-gray-400 hover:underline"
-							>
-								Devis
-							</a>
-						</li>
-					</ul>
-				</div>
-
-				{/* Section 4: Réseaux sociaux */}
-				<div>
-					<h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-						Suivez-nous
-					</h3>
-					<div className="mt-2 flex space-x-4">
+		<footer className="w-full bg-white py-6">
+			<div className="max-w-screen-xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+				{/* Branding */}
+				<div className="flex items-center gap-4">
+					<img src="/file.jpg" className="w-10" alt="logo" />
+					<div>
+						<h2 className="text-lg font-bold text-cyan-800">Broderie Leveaux</h2>
+						<p className="text-sm text-gray-600">
+							Votre partenaire de confiance pour des broderies uniques.
+						</p>
 						<a
-							href="https://facebook.com"
-							target="_blank"
-							rel="noreferrer"
-							aria-label="Facebook"
+							href="/about"
+							className="text-cyan-800 text-sm font-medium hover:underline"
 						>
-							<img
-								src="/facebook-logo.png"
-								alt="Facebook"
-								width="24"
-								height="24"
-							/>
+							En savoir plus
 						</a>
-						<a
-							href="https://twitter.com"
-							target="_blank"
-							rel="noreferrer"
-							aria-label="Twitter"
-						>
-							<img src="/x-logo.png" alt="Twitter" width="24" height="24" />
+					</div>
+				</div>
+
+				{/* Contact */}
+				<div className="mt-4 lg:mt-0 text-center lg:text-left space-y-2">
+					<h3 className="text-md font-semibold text-cyan-800">Contact</h3>
+					<p className="text-sm text-gray-600">Adresse : 100 bis rue Faidherbe, Walincourt</p>
+					<p className="text-sm text-gray-600">Téléphone : +33 (0)327 700 900</p>
+					<p className="text-sm text-gray-600">Email : contact@broderies-leveaux.fr</p>
+				</div>
+
+				{/* Social Media */}
+				<div className="mt-4 lg:mt-0 text-center lg:text-right">
+					<h3 className="text-md font-semibold text-cyan-800">Suivez-nous</h3>
+					<div className="flex justify-center lg:justify-end gap-4 mt-2">
+						<a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+							<Facebook className="w-5 h-5 text-gray-700 hover:text-cyan-800" />
 						</a>
-						<a
-							href="https://linkedin.com"
-							target="_blank"
-							rel="noreferrer"
-							aria-label="LinkedIn"
-						>
-							<img
-								src="/linkedin-logo.png"
-								alt="LinkedIn"
-								width="24"
-								height="24"
-							/>
+						<a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+							<Instagram className="w-5 h-5 text-gray-700 hover:text-cyan-800" />
+						</a>
+						<a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+							<Twitter className="w-5 h-5 text-gray-700 hover:text-cyan-800" />
 						</a>
 					</div>
 				</div>
 			</div>
 
-			{/* Footer bottom */}
-			<div className="mt-8 border-t border-gray-300 pt-4 dark:border-gray-700">
-				<p className="text-center text-sm text-gray-600 dark:text-gray-400">
-					&copy; {new Date().getFullYear()} Gerico. Tous droits réservés.
-				</p>
-				<div className="text-center">
-					<a
-						href="/politics"
-						className="text-sm text-gray-600 dark:text-gray-400 hover:underline"
-					>
-						Politique de confidentialité
-					</a>
-				</div>
+			{/* Bottom Line */}
+			<div className="border-t mt-6 pt-4 text-center text-sm text-gray-500">
+				<p>&copy; {new Date().getFullYear()} Broderie Leveaux. Tous droits réservés.</p>
+				<a
+					href="/politics"
+					className="text-cyan-800 hover:underline"
+				>
+					Politique de confidentialité
+				</a>
 			</div>
 		</footer>
 	);
-}
+};
 
 export default Footer;

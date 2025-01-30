@@ -8,6 +8,10 @@ module.exports = {
 	],
 	theme: {
     	extend: {
+			container: {
+				center: true, // centre le conteneur
+				padding: '2rem', // définit un padding de 2rem pour le conteneur
+			  },
 			fontFamily: {
 				parisienne: ['Parisienne', 'sans-serif'],
 			},

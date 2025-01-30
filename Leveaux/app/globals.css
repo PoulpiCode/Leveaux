@@ -21,6 +21,10 @@ body {
 	font-family: "Italiano", cursive;
 }
 
+.container {
+	@apply px-4 mx-auto; /* Assure-toi que ce genre d'utilisation est correct */
+  }
+
 h1 {
 	font-size: 3rem;
 }
