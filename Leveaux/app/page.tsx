@@ -206,25 +206,6 @@ const Hero1 = () => {
         </Carousel>
       </div>
     </section>
-			
-			<div className="py-4">
-				<h2 className="flex justify-center text-cyan-800 decoration-solid font-italiano">
-					De fil en aiguille
-				</h2>
-				<Separator className="my-4 bg-cyan-800" />
-			</div>
-			<div className="video-container flex justify-center mb-4">
-				<iframe
-					width="598"
-					height="336"
-					src="https://www.youtube.com/embed/0-Qn_07TpQo"
-					title="Broderies Leveaux"
-					frameBorder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerPolicy="strict-origin-when-cross-origin"
-					allowFullScreen
-				></iframe>
-			</div>
 				  <div className="py-8">
 				  <section className="w-full h-full">
 				<div
@@ -250,20 +231,34 @@ const Hero1 = () => {
 							solutions durables.
 						</h3>
 						<div className="py-4">
-<Link href="/envi">
-	<Button className="text-white bg-transparent border border-white hover:bg-sky-950 hover:text-white transition duration-transition duration-300 px-7 py-5 text-lg rounded-3xl ">
-		A Propos
-	</Button>
-</Link>
-</div>
-						<div className="flex gap-7 pt-4"></div>
+            <Link href="/envi">
+	            <Button className="text-white bg-transparent border border-white hover:bg-sky-950 hover:text-white transition duration-transition duration-300 px-7 py-5 text-lg rounded-3xl ">
+		          A Propos
+	            </Button>
+            </Link>
+            </div>
 					</div>
 				</div>
-				
+        <div className="py-4">
+				<h2 className="flex justify-center text-cyan-800 decoration-solid font-italiano">
+					De fil en aiguille
+				</h2>
+			</div>
+			<div className="video-container flex justify-center mb-4">
+				<iframe
+					width="598"
+					height="336"
+					src="https://www.youtube.com/embed/0-Qn_07TpQo"
+					title="Broderies Leveaux"
+					frameBorder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerPolicy="strict-origin-when-cross-origin"
+					allowFullScreen
+				></iframe>
+			</div>
 			</section>
 			</div>
 		</section>
-    
 		
 	);
 };

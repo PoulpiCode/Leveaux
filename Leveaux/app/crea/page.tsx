@@ -1,24 +1,55 @@
-import { Button } from "@/components/ui/button";
-
-const Hero78 = () => {
+const Contact8 = () => {
   return (
-    <section className="dark relative flex h-svh max-h-[1400px] w-svw overflow-hidden bg-[url(/images/block/full-width-backgrounds/pawel-czerwinski-IbHFznCKnqA-unsplash.jpg)] bg-cover bg-center bg-no-repeat font-sans after:absolute after:left-0 after:top-0 after:z-10 after:h-full after:w-full after:bg-black/20 after:content-[''] md:h-svh">
-      <div className="relative z-30 m-auto flex max-w-[46.25rem] flex-col items-center justify-center gap-6 px-5">
-        <h1 className="text-center font-serif text-4xl leading-tight text-foreground md:text-6xl xl:text-[4.4rem]">
-          Explore the wonders of science.
-        </h1>
-        <p className="text-center text-base text-foreground">
-          From stunning skyscrapers to intricate bridges and innovative
-          architectural marvels, each photo invites you to explore the
-          artificial wonders of the world.
-        </p>
-        <Button className="h-fit w-fit rounded-full px-7 py-4 text-sm font-medium leading-tight">
-          See all photos
-        </Button>
+    <section className="py-32">
+      <div className="container">
+        <div className="text-center">
+          <h1 className="mb-3 text-5xl font-bold">Nous Contacter</h1>
+        </div>
+        <div className="mx-auto mt-24 grid max-w-screen-xl gap-4 md:grid-cols-2">
+          <div className="flex flex-col gap-2 rounded-lg bg-accent p-2">
+            <div className="flex h-full flex-col justify-between gap-6 rounded-lg bg-background p-6">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28977.20301339372!2d3.3293907512416165!3d50.06293396943577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c298af4168052d%3A0x77a41d4be091860c!2sBroderies%20Leveaux!5e0!3m2!1sfr!2sfr!4v1738067622454!5m2!1sfr!2sfr"
+                width="100%"
+                height="600" // Augmentation de la hauteur
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 rounded-lg bg-accent p-2">
+            <div className="flex h-full flex-col justify-between gap-6 rounded-lg bg-background p-6">
+              <p className="text-2xl">L'entreprise</p>
+              <div className="flex flex-col">
+                <span className="hover:underline inline w-auto">contact@broderies-leveaux.fr</span>
+                <span className="hover:underline inline w-auto">Tel. : +33 (0)327 700 900</span>
+                <span className="hover:underline inline w-auto">Fax. : +33 (0)327 700 901</span>
+              </div>
+            </div>
+            <div className="flex h-full flex-col justify-between gap-6 rounded-md bg-background p-6">
+              <p className="text-2xl">Offices</p>
+              <div className="grid gap-8 md:grid-cols-2 md:gap-4">
+                <div>
+                  <p className="mb-2 text-xl text-muted-foreground md:mb-4">
+                    New York
+                  </p>
+                  <p>123 6th St. Melbourne, FL 32904, USA</p>
+                </div>
+                <div>
+                  <p className="mb-2 text-xl text-muted-foreground md:mb-4">
+                    Paris
+                  </p>
+                  <p>456 Rue de Paris, 75000 Paris, France</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="pointer-events-none absolute inset-0 z-20 h-full w-full bg-[url(/images/block/noise.png)] bg-repeat opacity-15" />
     </section>
   );
 };
 
-export default Hero78;
+export default Contact8;
