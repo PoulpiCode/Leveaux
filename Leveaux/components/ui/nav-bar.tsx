@@ -77,7 +77,7 @@ const Navbar1 = () => {
 								)}
 								href="/test"
 							>
-								Test
+								home2
 							</a>
 
 							<a
@@ -142,7 +142,7 @@ const Navbar1 = () => {
 										A Propos
 									</a>
 									<a href="/test" className="font-semibold">
-										Test
+										home2
 									</a>
 									<a href="/contact" className="font-semibold">
 										Contacte

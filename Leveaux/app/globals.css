@@ -18,10 +18,18 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-/* styles/globals.css */
-@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Parisienne&display=swap");
-.font-italiano {
-	font-family: "Italiano", cursive;
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Noto+Serif+Hentaigana:wght@200..900&family=Parisienne&display=swap');
+
+.font-italianno {
+  font-family: 'Italianno', cursive;
+}
+
+.font-noto-serif-hentaigana {
+  font-family: 'Noto Serif Hentaigana', serif;
+}
+
+.font-parisienne {
+  font-family: 'Parisienne', cursive;
 }
 
 .container {
