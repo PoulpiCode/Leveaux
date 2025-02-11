@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowDownRight } from "lucide-react";
+import { ArrowDownRight, Play } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -18,6 +18,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { title } from "process";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const data = [
 	{
@@ -88,6 +89,10 @@ const Hero1 = () => {
       carouselApi.off("select", updateSelection);
     };
   }, [carouselApi]);
+  function setIsVideoOpen(arg0: boolean): void {
+    throw new Error("Function not implemented.");
+  }
+
 	return (
 		<section className="w-full h-full">
 			    <section 
@@ -252,7 +257,7 @@ const Hero1 = () => {
 						</h3>
 						<div className="py-4">
             <Link href="/envi">
-	            <Button className="text-white bg-transparent border border-white border-2 hover:bg-sky-950 hover:text-white transition duration-transition duration-300 px-7 py-5 text-lg rounded-3xl ">
+	            <Button className="text-white bg-transparent border border-white hover:bg-sky-950 hover:text-white transition duration-transition duration-300 px-7 py-5 text-lg rounded-3xl ">
 		          A Propos
 	            </Button>
             </Link>
@@ -263,18 +268,9 @@ const Hero1 = () => {
 				<h2 className="flex justify-center text-cyan-800 decoration-solid font-italiano">
 					De fil en aiguille
 				</h2>
-			</div>
-			<div className="video-container flex justify-center mb-4">
-				<iframe
-					width="598"
-					height="336"
-					src="https://www.youtube.com/embed/0-Qn_07TpQo"
-					title="Broderies Leveaux"
-					frameBorder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerPolicy="strict-origin-when-cross-origin"
-					allowFullScreen
-				></iframe>
+        <div className="flex justify-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/XDKh8SYj8Aw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        </div>
 			</div>
 			</section>
 			</div>

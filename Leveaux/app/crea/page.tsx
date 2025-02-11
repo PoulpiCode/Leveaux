@@ -1,55 +1,138 @@
-const Contact8 = () => {
+import { Badge } from "@/components/ui/badge";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
+const filters = [
+  { name: "Industries", values: ["None", "Beauty", "Car dealerships"] },
+  { name: "Use cases", values: ["None", "HR & Recruiting"] },
+  { name: "Functions", values: ["None", "Automations", "Integrations"] },
+  { name: "Company size", values: ["None", "1-10, 11-50", "51-200", "200+"] },
+];
+
+const posts = [
+  {
+    id: "post-1",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    href: "#",
+    image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+  },
+  {
+    id: "post-2",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    href: "#",
+    image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+  },
+  {
+    id: "post-3",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    href: "#",
+    image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+  },
+  {
+    id: "post-4",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    href: "#",
+    image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+  },
+  {
+    id: "post-5",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    href: "#",
+    image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+  },
+  {
+    id: "post-6",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    href: "#",
+    image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+  },
+];
+
+const Blog1 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <div className="text-center">
-          <h1 className="mb-3 text-5xl font-bold">Nous Contacter</h1>
+        <div className="mb-8 md:mb-10 lg:mb-12">
+          <h2 className="mb-6 w-full text-4xl font-medium md:mb-14 md:text-5xl lg:mb-16 lg:text-6xl">
+            All case studies
+          </h2>
+          <div className="mb-10 flex flex-wrap items-center gap-x-4 gap-y-3 lg:gap-x-3">
+            {filters.map((filter) => (
+              <div key={filter.name} className="shrink-0 md:w-52 lg:w-56">
+                <Select>
+                  <SelectTrigger>
+                    <SelectValue placeholder={filter.name} />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {filter.values.map((value) => (
+                      <SelectItem key={value} value={value}>
+                        {value}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="mx-auto mt-24 grid max-w-screen-xl gap-4 md:grid-cols-2">
-          <div className="flex flex-col gap-2 rounded-lg bg-accent p-2">
-            <div className="flex h-full flex-col justify-between gap-6 rounded-lg bg-background p-6">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28977.20301339372!2d3.3293907512416165!3d50.06293396943577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c298af4168052d%3A0x77a41d4be091860c!2sBroderies%20Leveaux!5e0!3m2!1sfr!2sfr!4v1738067622454!5m2!1sfr!2sfr"
-                width="100%"
-                height="600" // Augmentation de la hauteur
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2 rounded-lg bg-accent p-2">
-            <div className="flex h-full flex-col justify-between gap-6 rounded-lg bg-background p-6">
-              <p className="text-2xl">L'entreprise</p>
-              <div className="flex flex-col">
-                <span className="hover:underline inline w-auto">contact@broderies-leveaux.fr</span>
-                <span className="hover:underline inline w-auto">Tel. : +33 (0)327 700 900</span>
-                <span className="hover:underline inline w-auto">Fax. : +33 (0)327 700 901</span>
-              </div>
-            </div>
-            <div className="flex h-full flex-col justify-between gap-6 rounded-md bg-background p-6">
-              <p className="text-2xl">Offices</p>
-              <div className="grid gap-8 md:grid-cols-2 md:gap-4">
-                <div>
-                  <p className="mb-2 text-xl text-muted-foreground md:mb-4">
-                    New York
-                  </p>
-                  <p>123 6th St. Melbourne, FL 32904, USA</p>
-                </div>
-                <div>
-                  <p className="mb-2 text-xl text-muted-foreground md:mb-4">
-                    Paris
-                  </p>
-                  <p>456 Rue de Paris, 75000 Paris, France</p>
+        <div className="grid gap-4 md:grid-cols-2 lg:gap-6 2xl:grid-cols-3">
+          {posts.map((post) => (
+            <a
+              key={post.id}
+              href={post.href}
+              className="group flex flex-col justify-between rounded-xl border border-border bg-accent p-6"
+            >
+              <div>
+                <div className="flex aspect-[3/2] overflow-clip rounded-xl">
+                  <div className="flex-1">
+                    <div className="relative h-full w-full origin-bottom transition duration-300 group-hover:scale-105">
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="h-full w-full object-cover object-center"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+              <div className="mb-2 line-clamp-3 break-words pt-4 text-lg font-medium md:mb-3 md:pt-4 md:text-2xl lg:pt-4 lg:text-3xl">
+                {post.title}
+              </div>
+              <div className="mb-8 line-clamp-2 text-sm text-muted-foreground md:mb-12 md:text-base lg:mb-9">
+                {post.summary}
+              </div>
+              <div>
+                <Badge>{post.label}</Badge>
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </section>
   );
 };
 
-export default Contact8;
+export default Blog1 ;
