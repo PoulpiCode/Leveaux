@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
 	return (
@@ -31,16 +31,13 @@ const Footer = () => {
 
 				{/* Social Media */}
 				<div className="mt-4 lg:mt-0 text-center lg:text-right">
-					<h3 className="text-md font-semibold text-cyan-800">Suivez-nous</h3>
+					<h3 className="text-md font-semibold text-cyan-800 ">Suivez-nous</h3>
 					<div className="flex justify-center lg:justify-end gap-4 mt-2">
-						<a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-							<Facebook className="w-5 h-5 text-gray-700 hover:text-cyan-800" />
-						</a>
-						<a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+						<a href="https://www.instagram.com/broderiesleveaux/" target="_blank" rel="noopener noreferrer">
 							<Instagram className="w-5 h-5 text-gray-700 hover:text-cyan-800" />
 						</a>
-						<a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-							<Twitter className="w-5 h-5 text-gray-700 hover:text-cyan-800" />
+						<a href="https://www.linkedin.com/company/broderies-leveaux/" target="_blank" rel="noopener noreferrer">
+							<Linkedin className="w-5 h-5 text-gray-700 hover:text-cyan-800" />
 						</a>
 					</div>
 				</div>

@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
         <div className="mt-12 max-w-screen-xl">
           <h2 className="text-3xl font-semibold py-2">Qui sommes-nous ?</h2>
           <p className="mb-4">
-            Le site de Broderie Leveaux est conçu pour la gestion des bulletins de salaire et des demandes de congés pour les employés. Vous pouvez consulter notre page <a href="/about" className="text-blue-500 hover:underline">à propos</a> pour plus d'informations sur notre entreprise.
+          Le site de Broderie Leveaux est une plateforme dédiée à la présentation de notre entreprise, de notre savoir-faire et de nos services en broderie. Vous pouvez consulter notre page <a href="/about" className="text-blue-500 hover:underline">à propos</a> pour en savoir plus sur notre histoire et nos engagements.
           </p>
 
           <h2 className="text-3xl font-semibold py-2">Nature des données collectées</h2>

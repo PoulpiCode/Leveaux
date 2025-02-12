@@ -64,22 +64,8 @@ const Navbar1 = () => {
 								)}
 								href="/about"
 							>
-								A Propos
+								À Propos
 							</a>
-							<a
-								className={cn(
-									"text-black",
-									navigationMenuTriggerStyle,
-									buttonVariants({
-										variant: "ghost",
-									}),
-									"hover:text-cyan-700",
-								)}
-								href="/test"
-							>
-								home2
-							</a>
-
 							<a
 								className={cn(
 									"text-black",
@@ -139,10 +125,7 @@ const Navbar1 = () => {
 										Accueil
 									</a>
 									<a href="/about" className="font-semibold">
-										A Propos
-									</a>
-									<a href="/test" className="font-semibold">
-										home2
+									À Propos
 									</a>
 									<a href="/contact" className="font-semibold">
 										Contacte
