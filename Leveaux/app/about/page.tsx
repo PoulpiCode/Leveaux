@@ -110,6 +110,16 @@ const Blog15 = () => {
                   >
                     L’Héritage et la Passion
                   </p>
+                  <p
+                    className={cn(
+                      "block py-1 transition-colors duration-100",
+                      activeSection === "section4"
+                        ? "font-medium text-primary"
+                        : "text-muted-foreground hover:text-primary",
+                    )}
+                  >
+                    Vidéo d'entreprise
+                  </p>
                 </li>
               </ul>
             </nav>
@@ -122,7 +132,7 @@ const Blog15 = () => {
               Dans le Nord de la France, à Walincourt, se perpétue un savoir-faire ancestral. Un métier d’art, un héritage familial, une passion qui se transmet de génération en génération : la broderie.
               </p>
               <img
-                src="Aubade_Leveaux_v3.png"
+                src="pexels-suzyhazelwood-1232131 (2).jpg"
                 alt="placeholder"
                 className="my-8 aspect-video w-full rounded-md object-cover"
               />
@@ -150,7 +160,7 @@ const Blog15 = () => {
               <br />
               <strong> Les collections en évolution :</strong><br /><br />
               </p>
-              <div>
+              <div className="px-36">
                 <table>
                 <thead>
                   <tr>
@@ -162,7 +172,7 @@ const Blog15 = () => {
                 <tbody>
                   <tr>
                   <td>Lingerie&nbsp;</td>
-                  <td>	Délicatesse & finesse&nbsp;</td>
+                  <td>	Délicatesse & finesse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                   <td>	Dentelle brodée</td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
@@ -200,6 +210,20 @@ const Blog15 = () => {
                 <p>
                 Ainsi, entre tradition et modernité, Broderie Leveaux continue de faire rayonner l’art textile, façonnant avec passion des pièces uniques qui traversent le temps.
                 </p>
+              </section>
+
+              <section
+                id="section4"
+                ref={(ref) => addSectionRef("section3", ref)}
+                className="prose mb-8"
+              >
+                <h2>Vidéo D'entreprise</h2>
+                <p>
+                L'univers de Broderie Leveaux, où tradition et innovation se rencontrent. Depuis quatre générations, notre atelier crée des broderies uniques, alliant savoir-faire ancestral et techniques modernes, pour sublimer la mode, l’ameublement et la haute couture. Un art vivant, porté par la passion et l’héritage familial.<br /> <br />
+                </p>
+                <div className="flex justify-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/XDKh8SYj8Aw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        </div>
               </section>
             </div>
           </div>

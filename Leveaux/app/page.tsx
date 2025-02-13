@@ -23,7 +23,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 const data = [
 	{
 	  id: "item-1",
-	  title: "Natural Language Processing",
+	  title: "Création 1",
 	  summary:
 		"Advanced AI algorithms that understand and process human language, enabling seamless communication between users and machines through text and speech.",
 	  href: "https://www.shadcnblocks.com",
@@ -31,7 +31,7 @@ const data = [
 	},
 	{
 	  id: "item-2",
-	  title: "Computer Vision Technology",
+	  title: "Création 2",
 	  summary:
 		"Powerful image recognition and processing capabilities that allow AI systems to analyze, understand, and interpret visual information from the world.",
 	  href: "https://www.shadcnblocks.com",
@@ -39,7 +39,7 @@ const data = [
 	},
 	{
 	  id: "item-3",
-	  title: "Machine Learning Automation",
+	  title: "Création 3",
 	  summary:
 		"Self-improving algorithms that learn from data patterns to automate complex tasks and make intelligent decisions with minimal human intervention.",
 	  href: "https://www.shadcnblocks.com",
@@ -47,7 +47,7 @@ const data = [
 	},
 	{
 	  id: "item-4",
-	  title: "Predictive Analytics",
+	  title: "Création 4",
 	  summary:
 		"Advanced forecasting capabilities that analyze historical data to predict future trends and outcomes, helping businesses make data-driven decisions.",
 	  href: "https://www.shadcnblocks.com",
@@ -55,7 +55,7 @@ const data = [
 	},
 	{
 	  id: "item-5",
-	  title: "Neural Network Architecture",
+	  title: "Création 5",
 	  summary:
 		"Sophisticated AI models inspired by human brain structure, capable of solving complex problems through deep learning and pattern recognition.",
 	  href: "https://www.shadcnblocks.com",
@@ -63,7 +63,7 @@ const data = [
 	},
   {
     id: "item-6",
-    title: "Test random curulicutum",
+    title: "Création 6",
     summary:
     "random random random",
     href: "https://www.shadcnblocks.com",
@@ -223,7 +223,7 @@ const Hero1 = () => {
                     {item.summary}
                   </div>
                   <div className="flex items-center text-sm">
-                    Read more{" "}
+                    En voir plus{" "}
                     <ArrowRight className="ml-2 size-5 transition-transform group-hover:translate-x-1" />
                   </div>
                 </a>
@@ -256,7 +256,7 @@ const Hero1 = () => {
             Depuis 1905, notre entreprise familiale est spécialisée dans la broderie mécanique, offrant des solutions de qualité, ancrées dans le patrimoine textile de notre région.
 						</h3>
 						<div className="py-4">
-            <Link href="/envi">
+            <Link href="/about">
 	            <Button className="text-white bg-transparent border border-white hover:bg-sky-950 hover:text-white transition duration-transition duration-300 px-7 py-5 text-lg rounded-3xl ">
 		          A Propos
 	            </Button>
@@ -264,14 +264,6 @@ const Hero1 = () => {
             </div>
 					</div>
 				</div>
-        <div className="py-4">
-				<h2 className="flex justify-center text-cyan-800 decoration-solid font-italiano">
-					De fil en aiguille
-				</h2>
-        <div className="flex justify-center">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/XDKh8SYj8Aw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-        </div>
-			</div>
 			</section>
 			</div>
 		</section>

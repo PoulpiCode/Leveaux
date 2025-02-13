@@ -16,8 +16,8 @@ const filters = [
 
 const posts = [
   {
-    id: "post-1",
-    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    id: "crea 1",
+    title: "crea 1",
     summary:
       "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
     label: "Ut varius dolor turpis",
@@ -25,8 +25,8 @@ const posts = [
     image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
   },
   {
-    id: "post-2",
-    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    id: "crea 2",
+    title: "crea 2",
     summary:
       "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
     label: "Ut varius dolor turpis",
@@ -34,8 +34,8 @@ const posts = [
     image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
   },
   {
-    id: "post-3",
-    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    id: "crea 3",
+    title: "crea 3",
     summary:
       "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
     label: "Ut varius dolor turpis",
@@ -43,8 +43,8 @@ const posts = [
     image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
   },
   {
-    id: "post-4",
-    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    id: "crea 4",
+    title: "crea 4",
     summary:
       "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
     label: "Ut varius dolor turpis",
@@ -52,8 +52,8 @@ const posts = [
     image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
   },
   {
-    id: "post-5",
-    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    id: "crea 5",
+    title: "crea 5",
     summary:
       "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
     label: "Ut varius dolor turpis",
@@ -61,8 +61,8 @@ const posts = [
     image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
   },
   {
-    id: "post-6",
-    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    id: "crea 6",
+    title: "crea 6",
     summary:
       "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
     label: "Ut varius dolor turpis",
