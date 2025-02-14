@@ -160,7 +160,7 @@ const Blog15 = () => {
               <br />
               <strong> Les collections en évolution :</strong><br /><br />
               </p>
-              <div className="px-36">
+              <div className="px-44">
                 <table>
                 <thead>
                   <tr>

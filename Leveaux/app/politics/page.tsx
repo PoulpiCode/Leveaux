@@ -15,13 +15,8 @@ const PrivacyPolicy = () => {
 
           <h2 className="text-3xl font-semibold py-2">Nature des données collectées</h2>
           <p className="mb-4">
-            Dans le cadre de l'utilisation des Sites, nous collectons les catégories de données suivantes concernant nos Utilisateurs :
+          Dans le cadre de l'utilisation de notre site vitrine, nous pouvons collecter certaines données techniques, telles que l'adresse IP et les journaux de connexion, afin d'assurer le bon fonctionnement et la sécurité du site.
           </p>
-          <ul className="list-disc pl-5 mb-4">
-            <li>Données d’état-civil, d'identité, d'identification.</li>
-            <li>Données relatives à la vie professionnelle (CV, scolarité, formation professionnelle, distinctions, etc.).</li>
-            <li>Données de connexion (adresses IP, journaux d'événements, etc.).</li>
-          </ul>
 
           <h2 className="text-3xl font-semibold py-2">Communication des données personnelles à des tiers</h2>
           <p className="mb-4">
@@ -35,12 +30,12 @@ const PrivacyPolicy = () => {
 
           <h2 className="text-3xl font-semibold py-2">Finalité de la réutilisation des données personnelles collectées</h2>
           <p className="mb-4">
-            Nous utilisons les données personnelles collectées pour :
+          Les données collectées sur notre site vitrine sont utilisées uniquement pour :
           </p>
           <ul className="list-disc pl-5 mb-4">
-            <li>Effectuer des opérations relatives à la gestion des clients, y compris le traitement des bulletins de salaire et la gestion des demandes de congés.</li>
-            <li>Faciliter la gestion administrative des employés et suivre la relation employé/employeur (enquêtes de satisfaction, réclamations, etc.).</li>
-            <li>Effectuer des analyses statistiques anonymisées pour améliorer nos services.</li>
+            <li>Assurer le bon fonctionnement et la sécurité du site.</li>
+            <li>Améliorer l’expérience utilisateur grâce à des analyses statistiques anonymisées.</li>
+            <li>Répondre aux demandes de contact si un formulaire est disponible.</li>
           </ul>
 
           <h2 className="text-3xl font-semibold py-2">Collecte des données d’identité et d’identification</h2>

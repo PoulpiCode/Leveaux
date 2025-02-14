@@ -128,13 +128,10 @@ const Navbar1 = () => {
 									À Propos
 									</a>
 									<a href="/contact" className="font-semibold">
-										Contacte
+										Contact
 									</a>
-									<a href="/join" className="font-semibold">
-										Nous Rejoindre
-									</a>
-									<a href="/actuglobal" className="font-semibold">
-										Actualités
+									<a href="/crea" className="font-semibold">
+										Création
 									</a>
 								</div>
 								<div className="border-t pt-4">
@@ -150,10 +147,6 @@ const Navbar1 = () => {
 										>
 											Politique de confidentialité
 										</a>
-									</div>
-									<div className="mt-2 flex flex-col gap-3">
-										<Button variant={"outline"}>Log in</Button>
-										<Button>Sign up</Button>
 									</div>
 								</div>
 							</SheetContent>
