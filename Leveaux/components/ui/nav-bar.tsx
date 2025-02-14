@@ -32,21 +32,22 @@ const Navbar1 = () => {
 				<nav className="hidden justify-between lg:flex">
 					<div className="flex items-center gap-8">
 						<div className="flex items-center gap-2 ml-4">
-							<img src="/file.jpg" className="w-8" alt="logo" />
-							<span className="text-2xl font-bold text-cyan-800">
+							<img src="/file.jpg" className="w-12" alt="logo" />
+							<span className="text-3xl font-bold text-cyan-800">
 								Broderie Leveaux
 							</span>
 						</div>
-						<div className="flex items-center">
+						<div className="flex items-center text-black text-4xl">
 							<a
 								className={cn(
-									"text-black",
+									"text-black font-bold",
 									"text-3xl",
 									navigationMenuTriggerStyle,
 									buttonVariants({
 										variant: "ghost",
 									}),
 									"hover:text-cyan-700",
+									"text-base" // Agrandir la taille
 								)}
 								href="/"
 							>
@@ -61,6 +62,8 @@ const Navbar1 = () => {
 										variant: "ghost",
 									}),
 									"hover:text-cyan-700",
+									"text-base",
+									
 								)}
 								href="/about"
 							>
@@ -74,6 +77,7 @@ const Navbar1 = () => {
 										variant: "ghost",
 									}),
 									"hover:text-cyan-700",
+									"text-base"
 								)}
 								href="/contact"
 							>
@@ -87,6 +91,7 @@ const Navbar1 = () => {
 										variant: "ghost",
 									}),
 									"hover:text-cyan-700",
+									"text-base"
 								)}
 								href="/crea"
 							>
@@ -98,7 +103,7 @@ const Navbar1 = () => {
 				<div className="block lg:hidden">
 					<div className="flex items-center justify-between">
 						<div className="flex items-center gap-2 ml-4">
-							<img src="/file.jpg" className="w-10" alt="logo" />
+							<img src="/file.jpg" className="w-12" alt="logo" />
 							<span className="text-xl font-bold text-cyan-800">
 								Broderie Leveaux
 							</span>
@@ -113,7 +118,7 @@ const Navbar1 = () => {
 								<SheetHeader>
 									<SheetTitle>
 										<div className="flex items-center gap-2">
-											<img src="/file.jpg" className="w-8" alt="logo" />
+											<img src="/file.jpg" className="w-12" alt="logo" />
 											<span className="text-xl font-bold">
 												Broderie Leveaux
 											</span>
