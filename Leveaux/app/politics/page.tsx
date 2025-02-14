@@ -30,7 +30,7 @@ const PrivacyPolicy = () => {
 
           <h2 className="text-3xl font-semibold py-2">Finalité de la réutilisation des données personnelles collectées</h2>
           <p className="mb-4">
-          Les données collectées sur notre site vitrine sont utilisées uniquement pour :
+          Les données collectées sur notre site vitrine sont utilisées uniquement pour 
           </p>
           <ul className="list-disc pl-5 mb-4">
             <li>Assurer le bon fonctionnement et la sécurité du site.</li>
