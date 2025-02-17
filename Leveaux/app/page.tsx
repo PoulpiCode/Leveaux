@@ -25,7 +25,7 @@ const data = [
 	  id: "item-1",
 	  title: "Création 1",
 	  summary:
-		"Advanced AI algorithms that understand and process human language, enabling seamless communication between users and machines through text and speech.",
+		"Lorem",
 	  href: "https://www.shadcnblocks.com",
 	  image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
 	},
@@ -33,7 +33,7 @@ const data = [
 	  id: "item-2",
 	  title: "Création 2",
 	  summary:
-		"Powerful image recognition and processing capabilities that allow AI systems to analyze, understand, and interpret visual information from the world.",
+		"Lorem",
 	  href: "https://www.shadcnblocks.com",
 	  image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
 	},
@@ -41,7 +41,7 @@ const data = [
 	  id: "item-3",
 	  title: "Création 3",
 	  summary:
-		"Self-improving algorithms that learn from data patterns to automate complex tasks and make intelligent decisions with minimal human intervention.",
+		"Lorem",
 	  href: "https://www.shadcnblocks.com",
 	  image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
 	},
@@ -49,7 +49,7 @@ const data = [
 	  id: "item-4",
 	  title: "Création 4",
 	  summary:
-		"Advanced forecasting capabilities that analyze historical data to predict future trends and outcomes, helping businesses make data-driven decisions.",
+		"Lorem",
 	  href: "https://www.shadcnblocks.com",
 	  image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
 	},
@@ -57,7 +57,7 @@ const data = [
 	  id: "item-5",
 	  title: "Création 5",
 	  summary:
-		"Sophisticated AI models inspired by human brain structure, capable of solving complex problems through deep learning and pattern recognition.",
+		"Lorem",
 	  href: "https://www.shadcnblocks.com",
 	  image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
 	},
@@ -65,7 +65,7 @@ const data = [
     id: "item-6",
     title: "Création 6",
     summary:
-    "random random random",
+    "Lorem",
     href: "https://www.shadcnblocks.com",
     image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
   },

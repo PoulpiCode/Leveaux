@@ -23,7 +23,6 @@ const Contact8 = () => {
                     <p className="mb-2 text-xl text-muted-foreground md:mb-4">
                       Walincourt-Selvigny
                     </p>
-                    
                     <p>100 Bis Rue Faidherbe, 59127 </p>
                   </div>
                 </div>
