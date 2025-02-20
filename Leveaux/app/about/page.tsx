@@ -132,7 +132,7 @@ const Blog15 = () => {
               Dans le Nord de la France, à Walincourt, se perpétue un savoir-faire ancestral. Un métier d’art, un héritage familial, une passion qui se transmet de génération en génération : la broderie.
               </p>
               <img
-                src="pexels-suzyhazelwood-1232131 (2).jpg"
+                src="Aubade2_Leveaux6.png"
                 alt="placeholder"
                 className="my-8 aspect-video w-full rounded-md object-cover"
               />

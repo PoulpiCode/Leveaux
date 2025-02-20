@@ -1,3 +1,5 @@
+import { Instagram, Linkedin } from "lucide-react";
+
 const Contact8 = () => {
     return (
       <section className="py-12">
@@ -18,15 +20,29 @@ const Contact8 = () => {
               </div>
               <div className="flex h-full flex-col justify-between gap-6 rounded-md bg-background p-6">
                 <p className="text-3xl font-bold underline">Adresses</p>
-                <div className="grid gap-8 md:grid-cols-2 md:gap-4">
+                <div className="grid gap-8 md:grid-cols- md:gap-4">
                   <div>
                     <p className="mb-2 text-xl text-muted-foreground md:mb-4">
                       Walincourt-Selvigny
                     </p>
                     <p>100 Bis Rue Faidherbe, 59127 </p>
                   </div>
+                  <div>
+                  <p className="mb-2 text-xl text-muted-foreground md:mb-4">
+                    Réseaux
+                  </p>
+                  <div className="flex justify-start gap-4">
+						<a href="https://www.instagram.com/broderiesleveaux/" target="_blank" rel="noopener noreferrer">
+							<Instagram className="w-6 h-6 text-gray-700 hover:text-cyan-800" />
+						</a>
+						<a href="https://www.linkedin.com/company/broderies-leveaux/" target="_blank" rel="noopener noreferrer">
+							<Linkedin className="w-6 h-6 text-gray-700 hover:text-cyan-800" />
+						</a>
+					</div>
+                </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
