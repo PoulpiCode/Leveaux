@@ -22,7 +22,7 @@ const posts = [
 		summary:
 			"Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
 		href: "#",
-		image: "Aubade2_Leveaux9.png",
+		image: "20250219_132749-min.jpeg",
 	},
 	{
 		id: "post-2",
@@ -31,7 +31,7 @@ const posts = [
 			"Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
 		label: "Ut varius dolor turpis",
 		href: "#",
-		image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+		image: "20250219_132806-min.jpeg",
 	},
 	{
 		id: "post-3",
@@ -40,7 +40,7 @@ const posts = [
 			"Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
 		label: "Ut varius dolor turpis",
 		href: "#",
-		image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+		image: "20250219_132817-min.jpeg",
 	},
 	{
 		id: "post-4",
@@ -49,7 +49,7 @@ const posts = [
 			"Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
 		label: "Ut varius dolor turpis",
 		href: "#",
-		image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+		image: "20250219_132845-min.jpeg",
 	},
 	{
 		id: "post-5",
@@ -58,7 +58,7 @@ const posts = [
 			"Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
 		label: "Ut varius dolor turpis",
 		href: "#",
-		image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+		image: "20250219_132900-min.jpeg",
 	},
 	{
 		id: "post-6",
@@ -67,7 +67,7 @@ const posts = [
 			"Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
 		label: "Ut varius dolor turpis",
 		href: "#",
-		image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+		image: "20250219_132930-min.jpeg",
 	},
 	{
 		id: "Photo 7",
@@ -75,7 +75,7 @@ const posts = [
 		summary:
 			"Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
 		href: "#",
-		image: "Aubade2_Leveaux9.png",
+		image: "20250219_132956-min.jpeg",
 	},
 	{
 		id: "photo 8",
@@ -84,7 +84,7 @@ const posts = [
 			"Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
 		label: "Ut varius dolor turpis",
 		href: "#",
-		image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+		image: "20250219_133545-min.jpeg",
 	},
 	{
 		id: "photo 9",

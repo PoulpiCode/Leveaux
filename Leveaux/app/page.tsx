@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { ArrowDownRight, Play } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
@@ -24,44 +24,26 @@ const data = [
 	{
 		id: "item-1",
 		title: "Création 1",
-		summary: "Lorem",
 		href: "/crea",
-		image: "Aubade2_Leveaux2.png",
+		image: "20250219_132749-min.jpeg",
 	},
 	{
 		id: "item-2",
 		title: "Création 2",
-		summary: "Lorem",
 		href: "/crea",
-		image: "Aubade2_Leveaux3.png",
+		image: "20250219_132806-min.jpeg",
 	},
 	{
 		id: "item-3",
 		title: "Création 3",
-		summary: "Lorem",
 		href: "/crea",
-		image: "Aubade2_Leveaux4.png",
+		image: "20250219_132817-min.jpeg",
 	},
 	{
 		id: "item-4",
 		title: "Création 4",
-		summary: "Lorem",
 		href: "/crea",
-		image: "Aubade2_Leveaux5.png",
-	},
-	{
-		id: "item-5",
-		title: "Création 5",
-		summary: "Lorem",
-		href: "/crea",
-		image: "Aubade2_Leveaux6.png",
-	},
-	{
-		id: "item-6",
-		title: "Création 6",
-		summary: "Lorem",
-		href: "/crea",
-		image: "Aubade2_Leveaux7.png",
+		image: "20250219_132845-min.jpeg",
 	},
 ];
 
@@ -220,10 +202,6 @@ const Hero1 = () => {
 										</div>
 										<div className="mb-8 line-clamp-2 text-sm text-muted-foreground md:mb-12 md:text-base lg:mb-9">
 											{item.summary}
-										</div>
-										<div className="flex items-center text-sm">
-											En voir plus{" "}
-											<ArrowRight className="ml-2 size-5 transition-transform group-hover:translate-x-1" />
 										</div>
 									</a>
 								</CarouselItem>
