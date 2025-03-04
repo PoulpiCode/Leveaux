@@ -2,6 +2,8 @@
 import Image from "next/image";
 import { ArrowDownRight, Play } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import {
 	Carousel,
@@ -18,41 +20,43 @@ import { useEffect, useState } from "react";
 import { title } from "process";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-
-const posts = [
+const data = [
 	{
-		id: "post-1",
-		title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
-		summary:
-			"Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
-		author: "Jane Doe",
-		published: "1 Jan 2024",
-		href: "#",
-		image: "20250219_132806 (1).jpg",
+		id: "item-1",
+		title: "Création 1",
+		href: "/crea",
+		image: "refait.jpg",
 	},
 	{
-		id: "post-2",
-		title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
-		summary:
-			"Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
-		author: "Jane Doe",
-		published: "1 Jan 2024",
-		href: "#",
-		image: "20250219_132806 (1).jpg",
+		id: "item-2",
+		title: "Création 2",
+		href: "/crea",
+		image: "20250219_132817-min.jpeg",
 	},
 	{
-		id: "post-3",
-		title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
-		summary:
-			"Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
-		author: "Jane Doe",
-		published: "1 Jan 2024",
-		href: "#",
-		image: "20250219_132806 (1).jpg",
+		id: "item-3",
+		title: "Création 3",
+		href: "/crea",
+		image: "refait2.png",
 	},
+	{
+		id: "item-4",
+		title: "Création 4",
+		href: "/crea",
+		image: "refait3.png",
+	},
+	{
+		id: "item-5",
+		title: "Création 5",
+		href: "/crea",
+		image: "refait4.png",
+	},
+	{
+		id:"item-6",
+		title: "Création 6",
+		href: "/crea",
+		image:"refait5.png"
+	}
 ];
 
 const Hero1 = () => {
@@ -132,37 +136,84 @@ const Hero1 = () => {
 									Découvrez notre collection
 								</span>
 							</div>
-							<h2 className="mb-3 text-3xl font-semibold md:mb-4 md:text-4xl lg:mb-6 text-center ml-16 pr-16">
+							<h2 className="mb-3 text-3xl font-semibold md:mb-4 md:text-4xl lg:mb-6 text-center ml-20">
 								Notre Collection
 							</h2>
 							<div className="flex justify-center">
 								<a
 									href="/crea"
-									className="group inline-flex items-center justify-center gap-1 text-sm font-medium md:text-base lg:text-lg hover:text-cyan-800 transition duration-transition duration-200 ml-16 pr-16"
+									className="group inline-flex items-center justify-center gap-1 text-sm font-medium md:text-base lg:text-lg hover:text-cyan-800 transition duration-transition duration-200 ml-20"
 								>
 									En savoir plus
 									<ArrowUpRight className="size-4 transition-transform group-hover:translate-x-1" />
 								</a>
 							</div>
 						</div>
+						<div className="mt-8 flex shrink-0 items-center justify-start gap-2">
+							<Button
+								size="icon"
+								variant="outline"
+								onClick={() => {
+									carouselApi?.scrollPrev();
+								}}
+								disabled={!canScrollPrev}
+								className="disabled:pointer-events-auto"
+							>
+								<ArrowLeft className="size-5" />
+							</Button>
+							<Button
+								size="icon"
+								variant="outline"
+								onClick={() => {
+									carouselApi?.scrollNext();
+								}}
+								disabled={!canScrollNext}
+								className="disabled:pointer-events-auto"
+							>
+								<ArrowRight className="size-5" />
+							</Button>
+						</div>
 					</div>
 				</div>
-				<div className="w-full px-4">
-					<div className="grid gap-x-4 gap-y-8 md:grid-cols-2 lg:gap-x-6 lg:gap-y-12 2xl:grid-cols-3">
-						{posts.map((post) => (
-							<a key={post.id} href={post.href} className="group flex flex-col">
-								<div className="mb-4 flex overflow-clip rounded-xl md:mb-5">
-									<div className="transition duration-300 group-hover:scale-105">
-										<img
-											src={post.image}
-											alt={post.title}
-											className="aspect-[3/2] h-full w-full object-cover object-center"
-										/>
-									</div>
-								</div>
-							</a>
-						))}
-					</div>
+				<div className="w-full">
+					<Carousel
+						setApi={setCarouselApi}
+						opts={{
+							breakpoints: {
+								"(max-width: 768px)": {
+									dragFree: true,
+								},
+							},
+						}}
+					>
+						<CarouselContent className="ml-[calc(theme(container.padding)-20px)] mr-[calc(theme(container.padding))] 2xl:ml-[calc(50vw-700px+theme(container.padding)-20px)] 2xl:mr-[calc(50vw-700px+theme(container.padding))]">
+							{data.map((item) => (
+								<CarouselItem
+									key={item.id}
+									className="pl-[20px] md:max-w-[452px]"
+								>
+									<a
+										href={item.href}
+										className="group flex flex-col justify-between"
+									>
+										<div>
+											<div className="flex aspect-[3/2] overflow-clip rounded-xl">
+												<div className="flex-1">
+													<div className="relative h-full w-full origin-bottom transition duration-300 group-hover:scale-105">
+														<img
+															src={item.image}
+															alt={item.title}
+															className="h-full w-full object-cover object-center"
+														/>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</CarouselItem>
+							))}
+						</CarouselContent>
+					</Carousel>
 				</div>
 			</section>
 			<div className="py-8">

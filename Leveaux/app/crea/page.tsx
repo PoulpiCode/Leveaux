@@ -1,100 +1,192 @@
+import { ChevronRight } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
+import { Separator } from "@radix-ui/react-separator";
 
-const people = [
-	{
-		id: "person-1",
-		name: "Name",
-		role: "Role",
-		description:
-			"Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
-	},
-	{
-		id: "person-2",
-		name: "Name",
-		role: "Role",
-		description: "Elig doloremque mollitia fugiat omnis!",
-	},
-	{
-		id: "person-3",
-		name: "Name",
-		role: "Role",
-		description:
-			"Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
-	},
-	{
-		id: "person-4",
-		name: "Name",
-		role: "Role",
-		description: "Elig doloremque mollitia fugiat omnis!",
-	},
-	{
-		id: "person-5",
-		name: "Name",
-		role: "Role",
-		description:
-			"Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
-	},
-	{
-		id: "person-6",
-		name: "Name",
-		role: "Role",
-		description:
-			"Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
-	},
-	{
-		id: "person-7",
-		name: "Name",
-		role: "Role",
-		description:
-			"Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
-	},
-	{
-		id: "person-8",
-		name: "Name",
-		role: "Role",
-		description:
-			"Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
-	},
+const posts = [
+  {
+    id: "post-1",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    author: "Jane Doe",
+    published: "1 Jan 2024",
+    href: "#",
+    image: "refait2.png",
+  },
+  {
+    id: "post-2",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    author: "Jane Doe",
+    published: "1 Jan 2024",
+    href: "#",
+    image: "refait3.png",
+  },
+  {
+    id: "post-3",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    author: "Jane Doe",
+    published: "1 Jan 2024",
+    href: "#",
+    image: "refait4.png",
+  },
+  {
+    id: "post-4",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    author: "Jane Doe",
+    published: "1 Jan 2024",
+    href: "#",
+    image: "refait5.png",
+  },
+  {
+    id: "post-5",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    author: "Jane Doe",
+    published: "1 Jan 2024",
+    href: "#",
+    image: "refait6.png",
+  },
+  {
+    id: "post-6",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    author: "Jane Doe",
+    published: "1 Jan 2024",
+    href: "#",
+    image: "refait7.png",
+  },
+  {
+    id: "post-7",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    author: "Jane Doe",
+    published: "1 Jan 2024",
+    href: "#",
+    image: "refait8.png",
+  },
+  {
+    id: "post-8",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    author: "Jane Doe",
+    published: "1 Jan 2024",
+    href: "#",
+    image: "refait9.png",
+  },
+  {
+    id: "post-9",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    author: "Jane Doe",
+    published: "1 Jan 2024",
+    href: "#",
+    image: "refait10.png",
+  },
+  {
+    id: "post-10",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    author: "Jane Doe",
+    published: "1 Jan 2024",
+    href: "#",
+    image: "refait11.png",
+  },
+  {
+    id: "post-11",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    author: "Jane Doe",
+    published: "1 Jan 2024",
+    href: "#",
+    image: "refait12.png",
+  },
+  {
+    id: "post-12",
+    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    summary:
+      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
+    label: "Ut varius dolor turpis",
+    author: "Jane Doe",
+    published: "1 Jan 2024",
+    href: "#",
+    image: "refait13.png",
+  },
 ];
 
-const Team5 = () => {
-	return (
-		<section className="py-32">
-			<div className="container flex flex-col items-center text-center">
-				<p className="semibold">We&apos;re hiring</p>
-				<h2 className="my-6 text-pretty text-2xl font-bold lg:text-4xl">
-					Meet our team
-				</h2>
-				<p className="mb-8 max-w-3xl text-muted-foreground lg:text-xl">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig
-					doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur.
-					Explicabo.
-				</p>
-				<div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
-					<Button variant="outline" className="w-full sm:w-auto">
-						Secondary
-					</Button>
-					<Button className="w-full sm:w-auto">Primary</Button>
-				</div>
-			</div>
-			<div className="container mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:px-32">
-				{people.map((person) => (
-					<div key={person.id} className="flex flex-col items-center">
-						<div className="mb-4 aspect-square w-full overflow-clip bg-accent md:mb-5">
-							{/* Avatar */}
-						</div>
-						<p className="w-full text-left font-medium">{person.name}</p>
-						<p className="w-full text-left text-muted-foreground">
-							{person.role}
-						</p>
-						<p className="w-full py-3 text-sm text-muted-foreground">
-							{person.description}
-						</p>
-					</div>
-				))}
-			</div>
-		</section>
-	);
+const HeroBlog = () => {
+  return (
+    <>
+      <section className="py-12">
+        <div className="overflow-hidden border-b border-muted">
+          <div className="container">
+            <div className="mx-auto flex max-w-5xl flex-col items-center">
+              <div className="z-10 items-center text-center">
+                <h1 className="mb-3 text-5xl font-bold">Nos Créations</h1>
+              </div>
+            </div>
+            <img
+              src="Aubade2_Leveaux3.png"
+              alt="placeholder"
+              className="mx-auto mt-12 max-h-[700px] w-full max-w-7xl rounded-lg object-cover shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="py-8">
+        <div className="container">
+          <div className="grid gap-x-4 gap-y-8 md:grid-cols-2 lg:gap-x-6 lg:gap-y-12 2xl:grid-cols-3">
+            {posts.map((post) => (
+              <a key={post.id} href={post.href} className="group flex flex-col">
+                <div className="mb-4 flex overflow-clip rounded-xl md:mb-5">
+                  <div className="h-full w-full transition duration-300 group-hover:scale-105">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="aspect-[3/2] h-full w-full object-cover object-center"
+                    />
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
 };
 
-export default Team5;
+export default HeroBlog;
