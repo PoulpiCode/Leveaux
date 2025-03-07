@@ -31,7 +31,7 @@ const data = [
 		id: "item-2",
 		title: "Création 2",
 		href: "/crea",
-		image: "20250219_132817-min.jpeg",
+		image: "refait10.png",
 	},
 	{
 		id: "item-3",
